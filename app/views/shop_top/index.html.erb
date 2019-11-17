@@ -1,0 +1,24 @@
+<%
+  title = '店舗用ページ'
+  content_for(:html_title) { title }
+%>
+<h1><%= title %></h1>
+<p>ここで商品管理や在庫管理をします。</p>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>商品管理</h2>
+      <p>ここに既存商品の検索結果の一覧が並びます。</p>
+      <p>ここで新しい商品の登録や既存商品の内容変更や削除ができます。</p>
+    </div>
+    <div class="col-lg-6">
+      <h2>在庫管理</h2>
+      <p>ここに既存商品の検索結果の一覧が並びます。</p>
+      <p>ここで商品別に在庫の発注を行います。</p>
+      <p>発注された商品は直ちに入庫されて在庫に加わります。</p>
+    </div>
+  </div>
+</div>
+
+<p><%= link_to '総合トップページに戻る', root_path %></p>

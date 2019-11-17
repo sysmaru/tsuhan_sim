@@ -1,0 +1,7 @@
+<%
+  title = '総合トップページ'
+  content_for(:html_title) { title }
+%>
+<h1><%= title %></h1>
+<p><%= link_to '顧客用ページ', customer_top_path %>からは商品購入ができます。</p>
+<p><%= link_to '店舗用ページ', shop_top_path %>からは商品管理や在庫管理ができます。</p>

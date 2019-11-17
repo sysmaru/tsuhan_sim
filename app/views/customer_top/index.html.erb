@@ -1,0 +1,22 @@
+<%
+  title = '顧客用ページ'
+  content_for(:html_title) { title }
+%>
+<h1><%= title %></h1>
+<p>ここで商品を購入します。</p>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>商品購入ページ</h2>
+      <p>ここに商品の検索結果の一覧が並びます。</p>
+      <p>ここで商品の購入をすると、あなたの家に疑似的に商品が届きます。</p>
+    </div>
+    <div class="col-lg-6">
+      <h2>あなたの家</h2>
+      <p>ここに商品購入ページで購入した商品の一覧が並びます。</p>
+    </div>
+  </div>
+</div>
+
+<p><%= link_to '総合トップページに戻る', root_path %></p>
